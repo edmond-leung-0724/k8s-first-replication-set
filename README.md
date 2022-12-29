@@ -1,3 +1,5 @@
+1) Create Pod
+
 kubectl create -f nginx-rs.yaml
 
 kubectl get pods
@@ -8,7 +10,7 @@ kubectl get rs nginx-rs -o wide
 
 kubectl describe rs nginx-rs
 
-Shutdown down
+2) Shutdown down
 
 kubeclt get po -o wide
 
@@ -18,7 +20,7 @@ kubectl get nodes
 
 kubectl get po -o wide
 
-Scaling up
+3) Scaling up
 
 kubectl scale rs nginx-rs --replicas=5
 
@@ -26,7 +28,7 @@ kubectl get rs nginx-rs
 
 kubectl get po -o wide
 
-clean up
+4) Clean up
 
 kubeclt delete -f nginx-rs.yaml
 
